@@ -1,0 +1,169 @@
+/* General reset */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.1;
+}
+
+/* Navbar */
+nav {
+  background: #111;
+  color: white;
+  padding: 15px 30px;
+  position: fixed;
+  width: 98%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff6ec4;
+}
+
+/* Hero section */
+.hero {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6a11cb, #2575fc, #ff6ec4);
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Foto elegan */
+.profile-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+  animation: slideDown 1.5s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin: 20px 0 10px 0;
+  animation: fadeInUp 1.5s ease;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  animation: fadeInUp 2s ease;
+}
+
+/* Section umum */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+  background: white;
+}
+
+.section:nth-child(even) {
+  background: #f1f3f6;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Portfolio cards */
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.portfolio-item {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Contact form */
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: linear-gradient(135deg, #ff6ec4, #2575fc);
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
