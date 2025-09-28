@@ -23,6 +23,12 @@ nav {
   align-items: center;
 }
 
+@media (max-width: 600px) {
+  .sidebar {
+    width: 70%;       /* lebih sempit di HP */
+  }
+}
+
 nav a {
   color: white;
   text-decoration: none;
@@ -60,7 +66,7 @@ nav a:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 20px;
   margin-top: 58px;
-  animation: slideDown 1.5s ease;
+  animation: slideDown 2.5s ease;
 }
 
 .profile-img:hover {
